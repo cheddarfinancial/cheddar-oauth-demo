@@ -1,0 +1,11 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+
+  <h1>{{ account.name }} - {{ account.amount }}</h1>
+  {% for transaction in transactions %}
+    <p>{{ transaction.date }} {{ transaction.description }} {{ transaction.amount }}</p>
+  {% endfor %}
+
+{% endblock %}
+

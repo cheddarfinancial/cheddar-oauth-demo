@@ -1,1 +1,11 @@
-<h1>Dashboard</h1>
+{% extends "app/base.html" %}
+
+{% block content %}
+
+  <h1>Dashboard</h1>
+  {% for account in accounts %}
+  <a href='/account/{{ account.id }}'>{{ account.name }} - {{ account.amount }}</p>
+  {% endfor %}
+
+{% endblock %}
+

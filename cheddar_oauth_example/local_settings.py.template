@@ -1,0 +1,4 @@
+# OAuth Key And Secret For Cheddar
+
+SOCIAL_AUTH_CHEDDAR_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxx'
+SOCIAL_AUTH_CHEDDAR_SECRET = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'

@@ -1,10 +1,11 @@
 {% extends "app/base.html" %}
 
+{% load humanize %}
 {% block content %}
 
-  <h1>{{ account.name }} - {{ account.amount }}</h1>
+  <h1>{{ account.name }} - ${{ account.amount|floatformat:2|intcomma }}</h1>
   {% for transaction in transactions %}
-    <p>{{ transaction.date }} {{ transaction.description }} {{ transaction.amount }}</p>
+    <p>({{ transaction.date }}) {{ transaction.description }} - ${{ transaction.amount|floatformat:2|intcomma }}</p>
   {% endfor %}
 
 {% endblock %}

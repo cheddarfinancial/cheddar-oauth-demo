@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'social.apps.django_app.default',
+    'django.contrib.humanize',
     'app',
 )
 
@@ -131,4 +132,3 @@ try:
     from local_settings import *
 except ImportError as e:
     print "FAILED TO IMPORT LOCAL SETTINGS: %s" % e
-    raise e
